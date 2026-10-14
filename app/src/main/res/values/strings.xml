@@ -1,6 +1,34 @@
 <resources>
-    <string name="app_name">Homework1</string>
-    <string name="student_name">Ефимова Юлия</string>
-    <string name="student_group">11-501</string>
-    <string name="open_second_screen">перейти на второй экпан</string>
+    <string name="app_name">HW2</string>
+    <!-- Экран авторизации -->
+    <string name="auth_title">Страница авторизации</string>
+    <string name="email_label">Введите почту</string>
+    <string name="password_label">Введите пароль</string>
+    <string name="login_button">Войти</string>
+
+    <!-- Ошибки email -->
+    <string name="email_empty_error">Введите email</string>
+    <string name="email_invalid_error">Введите корректный email</string>
+
+    <!-- Ошибки пароля -->
+    <string name="password_empty_error">Введите пароль</string>
+    <string name="password_invalid_error">Пароль должен содержать минимум 8 символов, английские буквы и цифры</string>
+
+    <!-- Экран профиля -->
+    <string name="profile_title">Профиль</string>
+    <string name="profile_email">Email: %1$s</string>
+    <string name="password_correct">Пароль введён правильно!</string>
+    <string name="password_incorrect">Пароль введён неправильно!</string>
+    <string name="generated_password_label">Сгенерированный пароль</string>
+
+    <!-- Кнопки экрана профиля -->
+    <string name="show_password">Показать пароль</string>
+    <string name="hide_password">Скрыть пароль</string>
+    <string name="copy_password">Копировать пароль</string>
+    <string name="password_copied">Пароль скопирован!</string>
+    <string name="back_button">Вернуться</string>
+
+    <!-- Описания изображений -->
+    <string name="success_image_description">Успешная проверка пароля</string>
+    <string name="error_image_description">Пароль введён неправильно</string>
 </resources>
