@@ -4,11 +4,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.homework1"
-    compileSdk = 37
+    namespace = "com.example.hw3"
+    compileSdk {
+        version = release(37)
+    }
 
     defaultConfig {
-        applicationId = "com.example.homework1"
+        applicationId = "com.example.hw3"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -36,16 +38,16 @@ android {
 dependencies {
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)
-    implementation(libs.androidx.activity.ktx)
-    implementation(libs.androidx.appcompat)
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
-    implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
-    implementation(libs.material)
+
+    implementation(libs.androidx.navigation3.runtime)
+    implementation(libs.androidx.navigation3.ui)
+
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
